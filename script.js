@@ -20,6 +20,7 @@ function createContainer(size) {
         gap: 0;
         grid-template-rows: repeat(${size}, 1fr);
         grid-template-columns: repeat(${size}, 1fr);
+        background-color: white;
     }
     
     `;
@@ -39,13 +40,6 @@ function addingSquare(size, container) {
       square.style["backgroundColor"] = `rgb(${R}, ${G}, ${B})`;
     });
 
-    square.addEventListener("mouseout", () => {
-        square.style["backgroundColor"] = `white`;
-      });
-
-      square.addEventListener("click", () => {
-        square.style["backgroundColor"] = `rgb(${R}, ${G}, ${B})`;
-      });
   
     container.appendChild(square);
   }

@@ -1,11 +1,37 @@
 * {
-    margin: 0;
+    margin: auto;
     padding: 0;
     box-sizing: border-box;
 }
 
 
+button {
+    padding: 1em;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
 
+button:hover {
+    border: 1px solid black;
+    color: black;
+    background-color: whitesmoke;
+}
+
+body {
+    background-color: gray;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2em;
+    gap: 2em;
+}
 
 .square {
     width: 100%;
